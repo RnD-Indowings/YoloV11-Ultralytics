@@ -72,6 +72,12 @@ For alternative installation methods, including [Conda](https://anaconda.org/con
 <details open>
 <summary>Usage</summary>
 
+Ultralytics YOLO can also be integrated directly into your Python projects. It accepts the same [configuration arguments](https://docs.ultralytics.com/usage/cfg/) as the CLI:
+
+```Downloading Dataset
+bash ultralytics/{location for the .sh files from where we will extract the main datasets}/......
+
+
 ### CLI
 
 You can use Ultralytics YOLO directly from the Command Line Interface (CLI) with the `yolo` command:
@@ -111,6 +117,8 @@ results[0].show()  # Display results
 # Export the model to ONNX format for deployment
 path = model.export(format="onnx")  # Returns the path to the exported model
 ```
+
+
 
 Discover more examples in the YOLO [Python Docs](https://docs.ultralytics.com/usage/python/).
 
