@@ -71,31 +71,49 @@ The `yolo` command supports various tasks and modes, accepting additional argume
 
 ### Python
 
-Ultralytics YOLO can also be integrated directly into your Python projects. It accepts the same [configuration arguments](https://docs.ultralytics.com/usage/cfg/) as the CLI:
+IW-Ultralytics-YOLO11 default_detect.py can also be integrated directly into Python projects. It accepts the same [configuration arguments] as the CLI:
 
 ```python
+import argparse
 from ultralytics import YOLO
+import cv2
 
-# Load a pretrained YOLO11n model
-model = YOLO("yolo11n.pt")
+def run(source=0, model_path="yolo11l.pt", conf=0.25, save=True, show=True):
+    # Load YOLOv11 model
+    model = YOLO(model_path)
 
-# Train the model on the COCO8 dataset for 100 epochs
-train_results = model.train(
-    data="coco8.yaml",  # Path to dataset configuration file
-    epochs=100,  # Number of training epochs
-    imgsz=640,  # Image size for training
-    device="cpu",  # Device to run on (e.g., 'cpu', 0, [0,1,2,3])
-)
+    # Run prediction (stream=True for live webcam/video frame by frame)
+    results = model.predict(source=source, conf=conf, stream=True, save=save, classes=[0])
 
-# Evaluate the model's performance on the validation set
-metrics = model.val()
+    # Iterate through results
+    for r in results:
+        frame = r.plot()  # get frame with boxes drawn
+        if show:
+            cv2.imshow("YOLOv11 Detection", frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
 
-# Perform object detection on an image
-results = model("path/to/image.jpg")  # Predict on an image
-results[0].show()  # Display results
 
-# Export the model to ONNX format for deployment
-path = model.export(format="onnx")  # Returns the path to the exported model
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", type=str, default="0", help="Source (0=webcam, path to image/video)")
+    parser.add_argument("--model", type=str, default="yolo11l.pt", help="Path to YOLOv11 model")
+    parser.add_argument("--conf", type=float, default=0.25, help="Confidence threshold")
+    parser.add_argument("--nosave", action="store_true", help="Do not save results")
+    parser.add_argument("--noshow", action="store_true", help="Do not display popup window")
+    args = parser.parse_args()
+
+    # Convert webcam source from string to int
+    source = int(args.source) if args.source.isdigit() else args.source
+
+    run(
+        source=source,
+        model_path=args.model,
+        conf=args.conf,
+        save=not args.nosave,
+        show=not args.noshow
+    )
+
 ```
 
 
