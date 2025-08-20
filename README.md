@@ -79,8 +79,7 @@ Ultralytics YOLO can also be integrated directly into your Python projects. It a
 ```bash
 bash ultralytics/{location for the .sh files from where we will extract the main datasets}/......
 
-
-
+```
 ### CLI
 
 You can use Ultralytics YOLO directly from the Command Line Interface (CLI) with the `yolo` command:
