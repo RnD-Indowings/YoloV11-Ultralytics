@@ -86,7 +86,8 @@ You can use Ultralytics YOLO directly from the Command Line Interface (CLI) with
 
 ```bash
 # Predict using a pretrained YOLO model (e.g., YOLO11n) on an image
-yolo predict model=yolo11n.pt source='https://ultralytics.com/images/bus.jpg'
+yolo predict model=yolo11n.pt source='0'   --for live
+yolo predict model=yolo11x.pt source="/home/........" -- for static image prediction
 ```
 
 The `yolo` command supports various tasks and modes, accepting additional arguments like `imgsz=640`. Explore the YOLO [CLI Docs](https://docs.ultralytics.com/usage/cli/) for more examples.
