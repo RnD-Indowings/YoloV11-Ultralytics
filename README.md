@@ -74,8 +74,11 @@ For alternative installation methods, including [Conda](https://anaconda.org/con
 
 Ultralytics YOLO can also be integrated directly into your Python projects. It accepts the same [configuration arguments](https://docs.ultralytics.com/usage/cfg/) as the CLI:
 
-```Downloading Dataset
+# Downloading Dataset  
+
+```bash
 bash ultralytics/{location for the .sh files from where we will extract the main datasets}/......
+
 
 
 ### CLI
