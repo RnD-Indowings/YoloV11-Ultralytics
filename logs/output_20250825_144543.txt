@@ -1,6 +1,0 @@
-CRITICAL:autopilot:Arm: GPS 1: Bad fix
-CRITICAL:autopilot:PreArm: GPS 1: Bad fix
-Traceback (most recent call last):
-  File "/home/kinetic-indowings/YoloV11-Ultralytics/modified_strike.py", line 43, in <module>
-    time.sleep(1)
-KeyboardInterrupt
