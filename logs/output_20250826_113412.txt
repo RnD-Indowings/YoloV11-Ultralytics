@@ -1,0 +1,106 @@
+[INFO] Connecting to vehicle at 127.0.0.1:14550 ...
+CRITICAL:autopilot:Potential Thrust Loss (4)
+[INFO] Setting GUIDED mode ...
+[INFO] Arming motors ...
+[INFO] Taking off to 15.0 m ...
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.35 m
+[TAKEOFF] Alt: 0.32 m
+[TAKEOFF] Alt: 0.34 m
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.38 m
+[TAKEOFF] Alt: 0.38 m
+[TAKEOFF] Alt: 0.39 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.40 m
+[TAKEOFF] Alt: 0.39 m
+[TAKEOFF] Alt: 0.38 m
+[TAKEOFF] Alt: 0.38 m
+[TAKEOFF] Alt: 0.37 m
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.35 m
+[TAKEOFF] Alt: 0.34 m
+[TAKEOFF] Alt: 0.34 m
+[TAKEOFF] Alt: 0.34 m
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.40 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.43 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.40 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.43 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.39 m
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.33 m
+[TAKEOFF] Alt: 0.30 m
+[TAKEOFF] Alt: 0.27 m
+[TAKEOFF] Alt: 0.27 m
+[TAKEOFF] Alt: 0.25 m
+[TAKEOFF] Alt: 0.24 m
+[TAKEOFF] Alt: 0.22 m
+[TAKEOFF] Alt: 0.19 m
+[TAKEOFF] Alt: 0.16 m
+[TAKEOFF] Alt: 0.15 m
+[TAKEOFF] Alt: 0.16 m
+[TAKEOFF] Alt: 0.19 m
+[TAKEOFF] Alt: 0.21 m
+[TAKEOFF] Alt: 0.23 m
+[TAKEOFF] Alt: 0.23 m
+[TAKEOFF] Alt: 0.23 m
+[TAKEOFF] Alt: 0.27 m
+[TAKEOFF] Alt: 0.35 m
+[TAKEOFF] Alt: 0.45 m
+[TAKEOFF] Alt: 0.50 m
+[TAKEOFF] Alt: 0.53 m
+[TAKEOFF] Alt: 0.51 m
+[TAKEOFF] Alt: 0.46 m
+[TAKEOFF] Alt: 0.40 m
+[TAKEOFF] Alt: 0.33 m
+[TAKEOFF] Alt: 0.28 m
+[TAKEOFF] Alt: 0.23 m
+[TAKEOFF] Alt: 0.21 m
+[TAKEOFF] Alt: 0.20 m
+[TAKEOFF] Alt: 0.21 m
+[TAKEOFF] Alt: 0.23 m
+[TAKEOFF] Alt: 0.25 m
+[TAKEOFF] Alt: 0.25 m
+[TAKEOFF] Alt: 0.26 m
+[TAKEOFF] Alt: 0.29 m
+[TAKEOFF] Alt: 0.32 m
+[TAKEOFF] Alt: 0.37 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.43 m
+[TAKEOFF] Alt: 0.44 m
+[TAKEOFF] Alt: 0.42 m
+[TAKEOFF] Alt: 0.41 m
+[TAKEOFF] Alt: 0.40 m
+[TAKEOFF] Alt: 0.39 m
+[TAKEOFF] Alt: 0.36 m
+[TAKEOFF] Alt: 0.31 m
+[TAKEOFF] Alt: 0.27 m
+[TAKEOFF] Alt: 0.26 m
+[TAKEOFF] Alt: 0.24 m
+[TAKEOFF] Alt: 0.22 m
+[TAKEOFF] Alt: 0.19 m
+[TAKEOFF] Alt: 0.15 m
+[TAKEOFF] Alt: 0.12 m
+[TAKEOFF] Alt: 0.10 m
+[TAKEOFF] Alt: 0.08 m
+Traceback (most recent call last):
+  File "/home/kinetic-indowings/YoloV11-Ultralytics/striking.py", line 217, in <module>
+    run(
+  File "/home/kinetic-indowings/YoloV11-Ultralytics/striking.py", line 84, in run
+    vehicle = connect_and_takeoff("127.0.0.1:14550", target_alt=15.0)
+  File "/home/kinetic-indowings/YoloV11-Ultralytics/striking.py", line 57, in connect_and_takeoff
+    time.sleep(0.5)
+KeyboardInterrupt

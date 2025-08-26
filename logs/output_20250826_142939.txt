@@ -1,0 +1,82 @@
+[INFO] Connecting to vehicle at 127.0.0.1:14550 ...
+[INFO] Setting GUIDED mode ...
+[INFO] Arming motors ...
+[INFO] Taking off to 15.0 m ...
+[TAKEOFF] Alt: 0.11 m
+[INFO] Target altitude reached (≈95%).
+[INFO] Loading YOLO model: yolo11l.pt
+[INFO] Entering detection + control loop ... (press 'q' to quit window)
+[CONTROL] det_conf=0.55 | err_x=108.5px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=-0.01 vy=0.00 vz=-0.08 | Alt=0.55
+[CONTROL] det_conf=0.55 | err_x=109.0px err_y=-61.2px | cmd vx=5.00 vy=2.18 vz=-1.84 | meas vx=-0.01 vy=0.00 vz=-0.08 | Alt=0.60
+[CONTROL] det_conf=0.51 | err_x=107.0px err_y=-60.1px | cmd vx=5.00 vy=2.14 vz=-1.80 | meas vx=-0.01 vy=0.00 vz=-0.08 | Alt=0.62
+[CONTROL] det_conf=0.51 | err_x=108.8px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=-0.01 vy=-0.01 vz=-0.08 | Alt=0.63
+[CONTROL] det_conf=0.56 | err_x=108.8px err_y=-60.2px | cmd vx=5.00 vy=2.18 vz=-1.81 | meas vx=-0.01 vy=-0.01 vz=-0.08 | Alt=0.63
+[CONTROL] det_conf=0.54 | err_x=108.5px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.65
+[CONTROL] det_conf=0.53 | err_x=108.7px err_y=-60.2px | cmd vx=5.00 vy=2.17 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.65
+[CONTROL] det_conf=0.53 | err_x=107.3px err_y=-60.3px | cmd vx=5.00 vy=2.15 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.66
+[CONTROL] det_conf=0.43 | err_x=107.9px err_y=-60.0px | cmd vx=5.00 vy=2.16 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.66
+[CONTROL] det_conf=0.50 | err_x=108.7px err_y=-60.2px | cmd vx=5.00 vy=2.17 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.57 | err_x=108.6px err_y=-60.8px | cmd vx=5.00 vy=2.17 vz=-1.82 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.58 | err_x=108.9px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.59 | err_x=108.8px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.59 | err_x=108.8px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.53 | err_x=108.5px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.50 | err_x=108.3px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.56 | err_x=108.6px err_y=-60.3px | cmd vx=5.00 vy=2.17 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.68
+[CONTROL] det_conf=0.52 | err_x=108.5px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.69
+[CONTROL] det_conf=0.58 | err_x=108.4px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.69
+[CONTROL] det_conf=0.62 | err_x=109.0px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.69
+[CONTROL] det_conf=0.61 | err_x=109.0px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.69
+[CONTROL] det_conf=0.59 | err_x=108.8px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.70
+[CONTROL] det_conf=0.52 | err_x=108.8px err_y=-60.3px | cmd vx=5.00 vy=2.18 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.70
+[CONTROL] det_conf=0.54 | err_x=109.0px err_y=-60.3px | cmd vx=5.00 vy=2.18 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.71
+[CONTROL] det_conf=0.55 | err_x=108.9px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.71
+[CONTROL] det_conf=0.58 | err_x=109.0px err_y=-60.2px | cmd vx=5.00 vy=2.18 vz=-1.81 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.72
+[CONTROL] det_conf=0.60 | err_x=109.0px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.72
+[CONTROL] det_conf=0.59 | err_x=108.9px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.73
+[CONTROL] det_conf=0.61 | err_x=109.0px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=-0.01 vz=-0.09 | Alt=0.73
+[CONTROL] det_conf=0.60 | err_x=108.9px err_y=-60.2px | cmd vx=5.00 vy=2.18 vz=-1.81 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.74
+[CONTROL] det_conf=0.49 | err_x=108.7px err_y=-60.2px | cmd vx=5.00 vy=2.17 vz=-1.81 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.74
+[CONTROL] det_conf=0.48 | err_x=108.7px err_y=-60.0px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.75
+[CONTROL] det_conf=0.60 | err_x=108.8px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.75
+[CONTROL] det_conf=0.51 | err_x=108.6px err_y=-60.2px | cmd vx=5.00 vy=2.17 vz=-1.81 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.76
+[CONTROL] det_conf=0.54 | err_x=108.7px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.76
+[CONTROL] det_conf=0.54 | err_x=108.8px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.77
+[CONTROL] det_conf=0.57 | err_x=109.0px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.78
+[CONTROL] det_conf=0.53 | err_x=108.9px err_y=-60.1px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.78
+[CONTROL] det_conf=0.52 | err_x=108.8px err_y=-59.9px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.78
+[CONTROL] det_conf=0.51 | err_x=108.9px err_y=-59.9px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.78
+[CONTROL] det_conf=0.52 | err_x=108.8px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.78
+[CONTROL] det_conf=0.50 | err_x=108.9px err_y=-59.9px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.78
+[CONTROL] det_conf=0.53 | err_x=108.7px err_y=-60.0px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.77
+[CONTROL] det_conf=0.57 | err_x=108.8px err_y=-59.9px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.77
+[CONTROL] det_conf=0.55 | err_x=108.6px err_y=-60.0px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.77
+[CONTROL] det_conf=0.49 | err_x=108.6px err_y=-59.9px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.77
+[CONTROL] det_conf=0.53 | err_x=108.9px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.78
+[CONTROL] det_conf=0.57 | err_x=108.7px err_y=-60.0px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.78
+[CONTROL] det_conf=0.57 | err_x=108.8px err_y=-59.9px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.79
+[CONTROL] det_conf=0.54 | err_x=108.8px err_y=-60.0px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.09 | Alt=0.79
+[CONTROL] det_conf=0.54 | err_x=108.8px err_y=-59.8px | cmd vx=5.00 vy=2.18 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.81
+[CONTROL] det_conf=0.56 | err_x=108.6px err_y=-60.1px | cmd vx=5.00 vy=2.17 vz=-1.80 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.81
+[CONTROL] det_conf=0.45 | err_x=108.2px err_y=-62.4px | cmd vx=5.00 vy=2.16 vz=-1.87 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.83
+[CONTROL] det_conf=0.59 | err_x=108.0px err_y=-102.3px | cmd vx=5.00 vy=2.16 vz=-3.07 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=0.83
+[CONTROL] det_conf=0.40 | err_x=108.4px err_y=-150.2px | cmd vx=5.00 vy=2.17 vz=-4.00 | meas vx=-0.01 vy=0.00 vz=-0.11 | Alt=0.85
+[CONTROL] det_conf=0.31 | err_x=108.0px err_y=-207.4px | cmd vx=5.00 vy=2.16 vz=-4.00 | meas vx=-0.01 vy=0.00 vz=-0.11 | Alt=0.85
+[CONTROL] det_conf=0.45 | err_x=109.3px err_y=-100.5px | cmd vx=5.00 vy=2.19 vz=-3.01 | meas vx=-0.02 vy=0.01 vz=-0.11 | Alt=0.95
+[CONTROL] det_conf=0.53 | err_x=109.7px err_y=-47.4px | cmd vx=5.00 vy=2.19 vz=-1.42 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=0.97
+[CONTROL] det_conf=0.55 | err_x=108.5px err_y=-36.3px | cmd vx=5.00 vy=2.17 vz=-1.09 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=0.97
+[CONTROL] det_conf=0.74 | err_x=109.3px err_y=-33.2px | cmd vx=5.00 vy=2.19 vz=-1.00 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=0.99
+[CONTROL] det_conf=0.51 | err_x=109.3px err_y=-31.3px | cmd vx=5.00 vy=2.19 vz=-0.94 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=0.99
+[CONTROL] det_conf=0.63 | err_x=109.4px err_y=-11.1px | cmd vx=5.00 vy=2.19 vz=-0.33 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=1.01
+[CONTROL] det_conf=0.65 | err_x=109.6px err_y=34.9px | cmd vx=5.00 vy=2.19 vz=1.05 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=1.01
+[CONTROL] det_conf=0.75 | err_x=115.8px err_y=145.3px | cmd vx=5.00 vy=2.32 vz=4.00 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=1.02
+[CONTROL] det_conf=0.68 | err_x=118.0px err_y=176.8px | cmd vx=5.00 vy=2.36 vz=4.00 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=1.03
+[CONTROL] det_conf=0.59 | err_x=119.8px err_y=188.4px | cmd vx=5.00 vy=2.40 vz=4.00 | meas vx=-0.02 vy=0.01 vz=-0.12 | Alt=1.03
+[CONTROL] det_conf=0.68 | err_x=120.7px err_y=191.0px | cmd vx=5.00 vy=2.41 vz=4.00 | meas vx=-0.02 vy=0.00 vz=-0.12 | Alt=1.04
+[CONTROL] det_conf=0.41 | err_x=120.7px err_y=191.8px | cmd vx=5.00 vy=2.41 vz=4.00 | meas vx=-0.02 vy=0.00 vz=-0.12 | Alt=1.04
+[CONTROL] det_conf=0.39 | err_x=120.6px err_y=191.9px | cmd vx=5.00 vy=2.41 vz=4.00 | meas vx=-0.02 vy=0.00 vz=-0.12 | Alt=1.05
+[CONTROL] det_conf=0.27 | err_x=120.8px err_y=192.1px | cmd vx=5.00 vy=2.42 vz=4.00 | meas vx=-0.01 vy=0.00 vz=-0.12 | Alt=1.07
+[CONTROL] det_conf=0.39 | err_x=120.8px err_y=191.8px | cmd vx=5.00 vy=2.42 vz=4.00 | meas vx=-0.01 vy=0.01 vz=-0.12 | Alt=1.08
+[CONTROL] det_conf=0.25 | err_x=120.7px err_y=191.4px | cmd vx=5.00 vy=2.41 vz=4.00 | meas vx=0.00 vy=0.01 vz=-0.11 | Alt=1.09
+[CONTROL] det_conf=0.30 | err_x=120.8px err_y=190.9px | cmd vx=5.00 vy=2.42 vz=4.00 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=1.09
+[CONTROL] det_conf=0.43 | err_x=122.1px err_y=204.0px | cmd vx=5.00 vy=2.44 vz=4.00 | meas vx=0.00 vy=0.00 vz=-0.10 | Alt=1.09

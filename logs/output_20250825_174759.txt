@@ -1,0 +1,15 @@
+[INFO] Connecting to vehicle at 127.0.0.1:14550 ...
+CRITICAL:autopilot:Arm: Roll (RC1) is not neutral
+[INFO] Setting GUIDED mode ...
+[INFO] Arming motors ...
+CRITICAL:autopilot:Arm: GPS 1: Bad fix
+CRITICAL:autopilot:PreArm: GPS 1: Bad fix
+CRITICAL:autopilot:Arm: GPS 1: Bad fix
+Traceback (most recent call last):
+  File "/home/kinetic-indowings/YoloV11-Ultralytics/striking.py", line 217, in <module>
+    run(
+  File "/home/kinetic-indowings/YoloV11-Ultralytics/striking.py", line 84, in run
+    vehicle = connect_and_takeoff("127.0.0.1:14550", target_alt=15.0)
+  File "/home/kinetic-indowings/YoloV11-Ultralytics/striking.py", line 45, in connect_and_takeoff
+    time.sleep(0.2)
+KeyboardInterrupt
