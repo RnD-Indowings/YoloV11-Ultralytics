@@ -1,6 +1,7 @@
 import argparse
 from ultralytics import YOLO
 import cv2
+import cv2
 
 
 def run(source=0, model_path="yolo11l.pt", conf=0.25, save=True, show=True):
