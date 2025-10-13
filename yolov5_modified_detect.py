@@ -1,16 +1,21 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 # detect.py for YOLOv11 (re-implemented from YOLOv5 style)
 
 # python3 yolov5_modified_detect.py       for running down with pop-up screen in yolov5 style
 
 
 import argparse
-from ultralytics import YOLO
+
 import cv2
+
+from ultralytics import YOLO
+
 
 def run(
     weights="yolo11n.pt",
     source="4",
-    data="/home/udit/ultralytics/ultralytics/cfg/datasets/coco128.yaml",        
+    data="/home/udit/ultralytics/ultralytics/cfg/datasets/coco128.yaml",
     imgsz=640,
     conf_thres=0.80,
     iou_thres=0.45,
@@ -29,7 +34,7 @@ def run(
     line_thickness=3,
     hide_labels=False,
     hide_conf=False,
-    vid_stride=1
+    vid_stride=1,
 ):
     # Load model
     model = YOLO(weights)
@@ -52,15 +57,13 @@ def run(
         name=name,
         exist_ok=exist_ok,
         vid_stride=vid_stride,
-        stream=True
+        stream=True,
     )
 
     # Iterate through results (for viewing)
     for r in results:
         im_array = r.plot(
-            line_width=line_thickness,
-            labels=not hide_labels,
-            conf=not hide_conf
+            line_width=line_thickness, labels=not hide_labels, conf=not hide_conf
         )  # returns BGR numpy array
 
         if view_img:
@@ -75,7 +78,12 @@ def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument("--weights", type=str, default="yolo11x.pt", help="model path")
     parser.add_argument("--source", type=str, default="4", help="file/dir/URL/glob, 0 for webcam")
-    parser.add_argument("--data", type=str, default="/home/udit/ultralytics/ultralytics/cfg/datasets/coco128.yaml", help="(optional) dataset.yaml path")
+    parser.add_argument(
+        "--data",
+        type=str,
+        default="/home/udit/ultralytics/ultralytics/cfg/datasets/coco128.yaml",
+        help="(optional) dataset.yaml path",
+    )
     parser.add_argument("--imgsz", type=int, default=640, help="inference size")
     parser.add_argument("--conf-thres", type=float, default=0.80, help="confidence threshold")
     parser.add_argument("--iou-thres", type=float, default=0.45, help="NMS IoU threshold")
@@ -86,7 +94,7 @@ def parse_opt():
     parser.add_argument("--save-conf", action="store_true", help="save confidences in labels")
     parser.add_argument("--save-crop", action="store_true", help="save cropped prediction boxes")
     parser.add_argument("--nosave", action="store_true", help="do not save images/videos")
-    parser.add_argument("--classes", nargs="+", type=int, default=0,  help="filter by class: --classes 0 2 3")
+    parser.add_argument("--classes", nargs="+", type=int, default=0, help="filter by class: --classes 0 2 3")
     parser.add_argument("--agnostic-nms", action="store_true", help="class-agnostic NMS")
     parser.add_argument("--project", default="runs/detect", help="save results to project/name")
     parser.add_argument("--name", default="exp", help="save results to project/name")
