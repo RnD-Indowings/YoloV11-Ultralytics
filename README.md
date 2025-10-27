@@ -4,7 +4,6 @@
       <img width="100%" src="https://raw.githubusercontent.com/ultralytics/assets/main/yolov8/banner-yolov8.png" alt="Ultralytics YOLO banner"></a>
   </p>
 
-
 <div>
     <a href="https://github.com/ultralytics/ultralytics/actions/workflows/ci.yml"><img src="https://github.com/ultralytics/ultralytics/actions/workflows/ci.yml/badge.svg" alt="Ultralytics CI"></a>
     <a href="https://pepy.tech/projects/ultralytics"><img src="https://static.pepy.tech/badge/ultralytics" alt="Ultralytics Downloads"></a>
@@ -47,23 +46,21 @@ Request an Enterprise License for commercial use at [Ultralytics Licensing](http
   <a href="https://discord.com/invite/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="2%" alt="Ultralytics Discord"></a>
 </div>
 
-
-
 Ultralytics YOLO can also be integrated directly into your Python projects. It accepts the same [configuration arguments](https://docs.ultralytics.com/usage/cfg/) as the CLI:
 
-# Downloading Dataset  
+# Downloading Dataset
 
 ```bash
 bash ultralytics/{location for the .sh files from where we will extract the main datasets}/......
-
 ```
+
 ### CLI
 
 You can use Ultralytics YOLO directly from the Command Line Interface (CLI) with the `yolo` command:
 
 ```bash
 # Predict using a pretrained YOLO model (e.g., YOLO11n) on an image
-yolo predict model=yolo11n.pt source='0'   --for live
+yolo predict model=yolo11n.pt source='0' --for live
 yolo predict model=yolo11x.pt source="/home/........" -- for static image prediction
 ```
 
@@ -75,8 +72,11 @@ IW-Ultralytics-YOLO11 default_detect.py can also be integrated directly into Pyt
 
 ```python
 import argparse
-from ultralytics import YOLO
+
 import cv2
+
+from ultralytics import YOLO
+
 
 def run(source=0, model_path="yolo11l.pt", conf=0.25, save=True, show=True):
     # Load YOLOv11 model
@@ -90,7 +90,7 @@ def run(source=0, model_path="yolo11l.pt", conf=0.25, save=True, show=True):
         frame = r.plot()  # get frame with boxes drawn
         if show:
             cv2.imshow("YOLOv11 Detection", frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == ord("q"):
                 break
 
 
@@ -106,17 +106,8 @@ if __name__ == "__main__":
     # Convert webcam source from string to int
     source = int(args.source) if args.source.isdigit() else args.source
 
-    run(
-        source=source,
-        model_path=args.model,
-        conf=args.conf,
-        save=not args.nosave,
-        show=not args.noshow
-    )
-
+    run(source=source, model_path=args.model, conf=args.conf, save=not args.nosave, show=not args.noshow)
 ```
-
-
 
 Discover more examples in the YOLO [Python Docs](https://docs.ultralytics.com/usage/python/).
 
@@ -240,4 +231,3 @@ Our key integrations with leading AI platforms extend the functionality of Ultra
   <a href="https://docs.ultralytics.com/integrations/neural-magic/">
     <img src="https://github.com/ultralytics/assets/raw/main/partners/logo-neuralmagic.png" width="10%" alt="Neural Magic logo"></a>
 </div>
-
