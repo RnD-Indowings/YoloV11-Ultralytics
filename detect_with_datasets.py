@@ -1,16 +1,22 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 import argparse
-import yaml
-from ultralytics import YOLO
-import cv2
 import os
+
+import cv2
+import yaml
+
+from ultralytics import YOLO
+
 
 def load_classes_from_yaml(data_yaml):
     """Load class names from data.yaml."""
     if not os.path.exists(data_yaml):
         raise FileNotFoundError(f"{data_yaml} not found.")
-    with open(data_yaml, "r") as f:
+    with open(data_yaml) as f:
         data = yaml.safe_load(f)
     return list(data.get("names", {}).keys()) if isinstance(data.get("names"), dict) else data.get("names", [])
+
 
 def run(source=4, model_path="yolo11l.pt", conf=0.80, save=True, show=True, data_yaml=None):
     # Load YOLOv11 model
@@ -30,7 +36,7 @@ def run(source=4, model_path="yolo11l.pt", conf=0.80, save=True, show=True, data
         frame = r.plot()  # get frame with boxes drawn
         if show:
             cv2.imshow("YOLOv11 Detection", frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == ord("q"):
                 break
 
 
@@ -41,7 +47,12 @@ if __name__ == "__main__":
     parser.add_argument("--conf", type=float, default=0.80, help="Confidence threshold")
     parser.add_argument("--nosave", action="store_true", help="Do not save results")
     parser.add_argument("--noshow", action="store_true", help="Do not display popup window")
-    parser.add_argument("--data", type=str, default="/home/udit/ultralytics/ultralytics/cfg/datasets/coco128.yaml", help="Path to data.yaml for class names")
+    parser.add_argument(
+        "--data",
+        type=str,
+        default="/home/udit/ultralytics/ultralytics/cfg/datasets/coco128.yaml",
+        help="Path to data.yaml for class names",
+    )
     args = parser.parse_args()
 
     # Convert webcam source from string to int
@@ -53,5 +64,5 @@ if __name__ == "__main__":
         conf=args.conf,
         save=not args.nosave,
         show=not args.noshow,
-        data_yaml=args.data
+        data_yaml=args.data,
     )
