@@ -235,3 +235,10 @@ Our key integrations with leading AI platforms extend the functionality of Ultra
     <img src="https://github.com/ultralytics/assets/raw/main/partners/logo-neuralmagic.png" width="10%" alt="Neural Magic logo"></a>
 </div>
 
+👨‍💻 Maintainer
+```bash
+Udit Ray
+Email: udit.ray@indowings.com
+Org: Indo Wings Private Limited
+Website: https://www.indowings.com
+
